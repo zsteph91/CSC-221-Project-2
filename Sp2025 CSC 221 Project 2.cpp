@@ -1,4 +1,4 @@
-// Sp2025 CSC 221 Project 2.cpp : Program calulating sea level rise in 5, 7, and 10 years 
+// Sp2025 CSC 221 Project 2.cpp : Program calulating distance per tank of gas in a town vs the highway
 //
 
 #include <iostream>
@@ -7,19 +7,21 @@ using namespace std;
 
 int main()
 {
-    float seaLevelRise;
-    float riseFiveYears;
-    float riseSevenYears;
-    float riseTenYears;
+    float distanceTown; // How many miles the car gets driving in a town
+    float distanceHwy; // How many miles the car gets driving on a highway
+    float numGal; // How many gallons of gas the car holds
+    float avgMpgTown; // MPG in town
+    float avgMpgHwy; // MPG on the highway
 
-    seaLevelRise = 1.5; // in mm per year
-    riseFiveYears = 5 * seaLevelRise; // # of years times rise in mm/year
-    riseSevenYears = 7 * seaLevelRise; // # of years times rise in mm/year
-    riseTenYears = 10 * seaLevelRise; // # of years times rise in mm/year
+    numGal = 20; 
+    avgMpgTown = 23.5;
+    avgMpgHwy = 28.9;
+    distanceTown = numGal * avgMpgTown;
+    distanceHwy = numGal * avgMpgHwy;
 
-    cout << "In five years the sea level will be, " << riseFiveYears << " millimeters, higher than it is today." << endl;
-    cout << "In seven years the sea level will be, " << riseSevenYears << " millimeters, higher than it is today." << endl;
-    cout << "In ten years the sea level will be, " << riseTenYears << " millimeters, higher than it is today." << endl;
+
+    cout << "This car can travel " << distanceTown << " miles when driven in town." << endl;
+    cout << "This car can travel " << distanceHwy << " miles when driven on the highway." << endl;
     return 0;
 }
 
