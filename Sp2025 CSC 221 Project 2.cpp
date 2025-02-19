@@ -1,4 +1,4 @@
-// Sp2025 CSC 221 Project 2.cpp : Program calulating sea level rise in 5, 7, and 10 years 
+// Sp2025 CSC 221 Project 2.cpp : Program calulating how many customers buy multiple energy drinks a week, and how many of those prefer citrus flavor
 //
 
 #include <iostream>
@@ -7,19 +7,22 @@ using namespace std;
 
 int main()
 {
-    float seaLevelRise;
-    float riseFiveYears;
-    float riseSevenYears;
-    float riseTenYears;
+    int totalCustServey;
+    float numCustMultDrink;
+    float numCitrusPref;
+    float perMultDrink;
+    float perCitrusPref;
 
-    seaLevelRise = 1.5; // in mm per year
-    riseFiveYears = 5 * seaLevelRise; // # of years times rise in mm/year
-    riseSevenYears = 7 * seaLevelRise; // # of years times rise in mm/year
-    riseTenYears = 10 * seaLevelRise; // # of years times rise in mm/year
+    totalCustServey = 16500;
+    perMultDrink = 0.15;
+    perCitrusPref = 0.58;
+    numCustMultDrink = totalCustServey * perMultDrink;
+    numCitrusPref = int(numCustMultDrink * perCitrusPref);
 
-    cout << "In five years the sea level will be, " << riseFiveYears << " millimeters, higher than it is today." << endl;
-    cout << "In seven years the sea level will be, " << riseSevenYears << " millimeters, higher than it is today." << endl;
-    cout << "In ten years the sea level will be, " << riseTenYears << " millimeters, higher than it is today." << endl;
+
+
+    cout << "The approximate number of customers that buy multiple drinks is, " << numCustMultDrink << "." << endl;
+    cout << "The approximate number of customers that buy multiple drinks and prefer citrus flavor is, " << numCitrusPref << "." << endl;
     return 0;
 }
 
