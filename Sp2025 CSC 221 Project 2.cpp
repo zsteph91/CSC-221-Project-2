@@ -7,11 +7,11 @@ using namespace std;
 
 int main()
 {
-    int totalCustServey;
-    float numCustMultDrink;
-    float numCitrusPref;
-    float perMultDrink;
-    float perCitrusPref;
+    int totalCustServey; // # of customers surveyed
+    float numCustMultDrink; // # of customer buying one or more drinks per week
+    float numCitrusPref; // # of customers buying drinks who prefer citrus flavor
+    float perMultDrink; // % of customers buying one or more drinks per week
+    float perCitrusPref; // % of customers buying drinks who prefer citrus flavor
 
     totalCustServey = 16500;
     perMultDrink = 0.15;
