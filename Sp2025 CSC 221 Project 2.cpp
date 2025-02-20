@@ -16,7 +16,7 @@ int main()
     totalCustServey = 16500;
     perMultDrink = 0.15;
     perCitrusPref = 0.58;
-    numCustMultDrink = totalCustServey * perMultDrink;
+    numCustMultDrink = int(totalCustServey * perMultDrink);
     numCitrusPref = int(numCustMultDrink * perCitrusPref);
 
 
